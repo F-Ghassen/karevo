@@ -1,0 +1,13 @@
+1. Install node
+
+#Initiate react project  
+npx create-react-app potato-defect-classifier
+
+#start deployment server
+Npm start
+
+Install chakra ui
+npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+Install react-router-dom
+npm install react-router-dom
