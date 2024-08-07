@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Karevo/static/css/main.f855e6bc.css",
+    "main.js": "/Karevo/static/js/main.faa207ed.js",
+    "static/js/453.8ab44547.chunk.js": "/Karevo/static/js/453.8ab44547.chunk.js",
+    "index.html": "/Karevo/index.html",
+    "main.f855e6bc.css.map": "/Karevo/static/css/main.f855e6bc.css.map",
+    "main.faa207ed.js.map": "/Karevo/static/js/main.faa207ed.js.map",
+    "453.8ab44547.chunk.js.map": "/Karevo/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.faa207ed.js"
+  ]
+}
