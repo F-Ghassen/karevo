@@ -1,0 +1,6 @@
+{
+    "greening_min": 0.25,
+    "greening_max": 0.5,
+    "malformed_min": 0.16,
+    "malformed_max": 0.81
+}

@@ -6,8 +6,24 @@ npx create-react-app potato-defect-classifier
 #start deployment server
 Npm start
 
-Install chakra ui
+#Install chakra ui
 npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
-Install react-router-dom
+#Install react-router-dom
 npm install react-router-dom
+
+#install axios
+npm install axios
+
+###backend###
+Install python and ensure having pip
+#install fastAPI and unicorn
+pip3 install fastapi uvicorn
+
+#run the app 
+uvicorn backend.src.main:app --reload
+
+#after running go to http://localhost:8000/docs or http://localhost:8000/redoc
+
+
+
