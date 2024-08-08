@@ -13,14 +13,13 @@ const VerticalNavBar = () => {
       bg="gray.50"
     >
       <VStack spacing={4} align="stretch">
-        <Image
-          src="/karevo_logo.jpeg"
-          alt="Karevo Logo"
-          boxSize="150px"
-          objectFit="contain"
-          mb={5}
-        />
-
+        <Link to="/">
+          <img
+            src={`${process.env.PUBLIC_URL}/karevo_logo.jpeg`}
+            alt="Karevo Logo"
+            width="150"
+          />
+        </Link>
         <Text fontSize="2xl" mb={5}>
           Menu
         </Text>
