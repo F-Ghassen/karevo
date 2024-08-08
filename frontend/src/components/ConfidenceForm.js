@@ -30,8 +30,11 @@ const ConfidenceForm = () => {
       malformed_max: malformedRange[1],
     };
 
+    console.log(data);
+
     try {
-      const res = await fetch("http://localhost:5000/update_confidence", {
+      const res = await fetch("http://localhost:8000/api/v1/confidence", {
+        // Updated URL
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -41,7 +44,9 @@ const ConfidenceForm = () => {
 
       if (res.ok) {
         const result = await res.json();
-        setResponse("Confidence levels updated successfully!");
+        setResponse(
+          result.message || "Confidence levels updated successfully!"
+        );
       } else {
         setResponse("Error updating confidence levels.");
       }

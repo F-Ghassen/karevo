@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, VStack, Link, Text, Image } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router-dom";
+import { Box, VStack, Link, Text } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 const VerticalNavBar = () => {
   return (
@@ -21,17 +21,44 @@ const VerticalNavBar = () => {
           />
         </Link>
         <Text fontSize="2xl" mb={5}>
-          Menu
+          Karevo App
         </Text>
-        <Link as={RouterLink} to="/" fontSize="lg">
-          Home
-        </Link>
-        <Link as={RouterLink} to="/confidence" fontSize="lg">
-          Confidence Levels
-        </Link>
-        <Link as={RouterLink} to="/video" fontSize="lg">
-          Video Feed
-        </Link>
+        <NavLink
+          to="/"
+          style={({ isActive }) => ({
+            textDecoration: "none",
+            padding: "8px 16px",
+            borderRadius: "4px",
+            backgroundColor: isActive ? "#3182CE" : "transparent",
+            color: isActive ? "white" : "inherit",
+          })}
+        >
+          <Text>Home</Text>
+        </NavLink>
+        <NavLink
+          to="/confidence"
+          style={({ isActive }) => ({
+            textDecoration: "none",
+            padding: "8px 16px",
+            borderRadius: "4px",
+            backgroundColor: isActive ? "#3182CE" : "transparent",
+            color: isActive ? "white" : "inherit",
+          })}
+        >
+          <Text>Confidence Levels</Text>
+        </NavLink>
+        <NavLink
+          to="/video"
+          style={({ isActive }) => ({
+            textDecoration: "none",
+            padding: "8px 16px",
+            borderRadius: "4px",
+            backgroundColor: isActive ? "#3182CE" : "transparent",
+            color: isActive ? "white" : "inherit",
+          })}
+        >
+          <Text> Video Feed</Text>
+        </NavLink>
         {/* Add more links as needed */}
       </VStack>
     </Box>

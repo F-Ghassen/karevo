@@ -1,12 +1,11 @@
 import "./App.css";
 
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Flex, Box, Text } from "@chakra-ui/react"; // Import Flex and Text
+import { BrowserRouter as Router } from "react-router-dom";
+import { Flex, Box } from "@chakra-ui/react"; // Import Flex and Text
 
-import VideoFeed from "./components/VideoFeed";
-import ConfidenceForm from "./components/ConfidenceForm";
 import VerticalNavBar from "./components/VerticalNavBar";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
@@ -14,20 +13,7 @@ function App() {
       <Flex>
         <VerticalNavBar />
         <Box flex="1" p={5}>
-          <Routes>
-            <Route path="/confidence" element={<ConfidenceForm />} />
-            <Route path="/video" element={<VideoFeed />} />
-            <Route
-              path="/"
-              element={
-                <Box p={5}>
-                  <Text fontSize="2xl">
-                    Welcome to the Potato Defect Classification App
-                  </Text>
-                </Box>
-              }
-            />
-          </Routes>
+          <AppRoutes />
         </Box>
       </Flex>
     </Router>
